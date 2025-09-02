@@ -1,0 +1,272 @@
+[
+  {
+    "id": "1",
+    "type": "metro",
+    "title": "Metro 1",
+    "status": "active",
+    "lat": 50.438677,
+    "lng": 30.536741,
+    "timestamp": "2025-08-26T09:05:00Z"
+  },
+  {
+    "id": "2",
+    "type": "bus",
+    "title": "Metro 18",
+    "status": "active",
+    "lat": 50.463912,
+    "lng": 30.51267,
+    "timestamp": "2025-08-26T09:10:00Z"
+  },
+  {
+    "id": "3",
+    "type": "tram",
+    "title": "Tram 27",
+    "status": "active",
+    "lat": 50.458072,
+    "lng": 30.52425,
+    "timestamp": "2025-08-26T09:15:00Z"
+  },
+  {
+    "id": "4",
+    "type": "bus",
+    "title": "Bus 33",
+    "status": "active",
+    "lat": 50.450569,
+    "lng": 30.51127,
+    "timestamp": "2025-08-26T09:20:00Z"
+  },
+  {
+    "id": "5",
+    "type": "metro",
+    "title": "Tram 11",
+    "status": "active",
+    "lat": 50.468054,
+    "lng": 30.507026,
+    "timestamp": "2025-08-26T09:25:00Z"
+  },
+  {
+    "id": "6",
+    "type": "tram",
+    "title": "Metro 11",
+    "status": "resolved",
+    "lat": 50.467676,
+    "lng": 30.510356,
+    "timestamp": "2025-08-26T09:30:00Z"
+  },
+  {
+    "id": "7",
+    "type": "metro",
+    "title": "Tram 2",
+    "status": "active",
+    "lat": 50.432688,
+    "lng": 30.515983,
+    "timestamp": "2025-08-26T09:35:00Z"
+  },
+  {
+    "id": "8",
+    "type": "metro",
+    "title": "Tram 26",
+    "status": "resolved",
+    "lat": 50.457781,
+    "lng": 30.513025,
+    "timestamp": "2025-08-26T09:40:00Z"
+  },
+  {
+    "id": "9",
+    "type": "metro",
+    "title": "Bus 35",
+    "status": "resolved",
+    "lat": 50.446818,
+    "lng": 30.527676,
+    "timestamp": "2025-08-26T09:45:00Z"
+  },
+  {
+    "id": "10",
+    "type": "metro",
+    "title": "Tram 38",
+    "status": "resolved",
+    "lat": 50.430928,
+    "lng": 30.536672,
+    "timestamp": "2025-08-26T09:50:00Z"
+  },
+  {
+    "id": "11",
+    "type": "metro",
+    "title": "Metro 11",
+    "status": "resolved",
+    "lat": 50.443383,
+    "lng": 30.526856,
+    "timestamp": "2025-08-26T09:55:00Z"
+  },
+  {
+    "id": "12",
+    "type": "metro",
+    "title": "Metro 26",
+    "status": "active",
+    "lat": 50.431576,
+    "lng": 30.528361,
+    "timestamp": "2025-08-26T10:00:00Z"
+  },
+  {
+    "id": "13",
+    "type": "tram",
+    "title": "Metro 18",
+    "status": "active",
+    "lat": 50.461711,
+    "lng": 30.509083,
+    "timestamp": "2025-08-26T10:05:00Z"
+  },
+  {
+    "id": "14",
+    "type": "metro",
+    "title": "Bus 30",
+    "status": "active",
+    "lat": 50.431412,
+    "lng": 30.534286,
+    "timestamp": "2025-08-26T10:10:00Z"
+  },
+  {
+    "id": "15",
+    "type": "bus",
+    "title": "Bus 1",
+    "status": "resolved",
+    "lat": 50.441111,
+    "lng": 30.522065,
+    "timestamp": "2025-08-26T10:15:00Z"
+  },
+  {
+    "id": "16",
+    "type": "metro",
+    "title": "Tram 3",
+    "status": "active",
+    "lat": 50.465129,
+    "lng": 30.533616,
+    "timestamp": "2025-08-26T10:20:00Z"
+  },
+  {
+    "id": "17",
+    "type": "bus",
+    "title": "Bus 37",
+    "status": "active",
+    "lat": 50.463513,
+    "lng": 30.53649,
+    "timestamp": "2025-08-26T10:25:00Z"
+  },
+  {
+    "id": "18",
+    "type": "tram",
+    "title": "Metro 43",
+    "status": "resolved",
+    "lat": 50.463294,
+    "lng": 30.510889,
+    "timestamp": "2025-08-26T10:30:00Z"
+  },
+  {
+    "id": "19",
+    "type": "bus",
+    "title": "Tram 9",
+    "status": "resolved",
+    "lat": 50.465701,
+    "lng": 30.535103,
+    "timestamp": "2025-08-26T10:35:00Z"
+  },
+  {
+    "id": "20",
+    "type": "metro",
+    "title": "Bus 25",
+    "status": "resolved",
+    "lat": 50.431168,
+    "lng": 30.507789,
+    "timestamp": "2025-08-26T10:40:00Z"
+  },
+  {
+    "id": "21",
+    "type": "metro",
+    "title": "Metro 38",
+    "status": "active",
+    "lat": 50.457905,
+    "lng": 30.51121,
+    "timestamp": "2025-08-26T10:45:00Z"
+  },
+  {
+    "id": "22",
+    "type": "bus",
+    "title": "Tram 42",
+    "status": "active",
+    "lat": 50.442622,
+    "lng": 30.513124,
+    "timestamp": "2025-08-26T10:50:00Z"
+  },
+  {
+    "id": "23",
+    "type": "tram",
+    "title": "Bus 32",
+    "status": "active",
+    "lat": 50.437222,
+    "lng": 30.506926,
+    "timestamp": "2025-08-26T10:55:00Z"
+  },
+  {
+    "id": "24",
+    "type": "tram",
+    "title": "Tram 42",
+    "status": "active",
+    "lat": 50.444071,
+    "lng": 30.526917,
+    "timestamp": "2025-08-26T11:00:00Z"
+  },
+  {
+    "id": "25",
+    "type": "tram",
+    "title": "Bus 14",
+    "status": "resolved",
+    "lat": 50.459371,
+    "lng": 30.505274,
+    "timestamp": "2025-08-26T11:05:00Z"
+  },
+  {
+    "id": "26",
+    "type": "bus",
+    "title": "Metro 46",
+    "status": "resolved",
+    "lat": 50.455005,
+    "lng": 30.521103,
+    "timestamp": "2025-08-26T11:10:00Z"
+  },
+  {
+    "id": "27",
+    "type": "tram",
+    "title": "Metro 38",
+    "status": "resolved",
+    "lat": 50.451239,
+    "lng": 30.507485,
+    "timestamp": "2025-08-26T11:15:00Z"
+  },
+  {
+    "id": "28",
+    "type": "bus",
+    "title": "Bus 14",
+    "status": "resolved",
+    "lat": 50.46041,
+    "lng": 30.528292,
+    "timestamp": "2025-08-26T11:20:00Z"
+  },
+  {
+    "id": "29",
+    "type": "tram",
+    "title": "Metro 38",
+    "status": "resolved",
+    "lat": 50.438871,
+    "lng": 30.521253,
+    "timestamp": "2025-08-26T11:25:00Z"
+  },
+  {
+    "id": "30",
+    "type": "metro",
+    "title": "Metro 43",
+    "status": "active",
+    "lat": 50.463157,
+    "lng": 30.53241,
+    "timestamp": "2025-08-26T11:30:00Z"
+  }
+]
