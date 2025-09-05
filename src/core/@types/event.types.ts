@@ -13,7 +13,7 @@ export enum EventStatus {
 
 export type EventStatusType = (typeof EventStatus)[keyof typeof EventStatus];
 
-export interface Event {
+export interface IEvent {
     id: string;
     type: EventType;
     title: string;

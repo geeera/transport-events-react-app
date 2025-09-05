@@ -1,15 +1,16 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { Event } from '../../@types/event.types';
+import { IEvent } from '../../@types/event.types';
 import type { RootState } from '../store';
 
-const fetchTransportEventById = createAsyncThunk(
+export const fetchTransportEventById = createAsyncThunk(
     'events/fetchById',
     async (eventId: string) => {
-        const response = await fetch('/assets/transport_data.json');
+        const requestUrl = process.env.REACT_APP_API_URL as string;
+        const response = await fetch(`${requestUrl}/transport_data.json`);
         const result = await response.json();
 
         const request = new Promise((resolve, reject) => {
-            const foundedEvent = result.find((e: Event) => e.id === eventId);
+            const foundedEvent = result.find((e: IEvent) => e.id === eventId);
             // setTimeout need only for fake request imitation
             setTimeout(() => {
                 if (foundedEvent) {
@@ -28,7 +29,7 @@ const fetchTransportEventById = createAsyncThunk(
 );
 
 interface EventDetailsState {
-    info: Event | null;
+    info: IEvent | null;
     status: string | null;
     error: string | null;
 }
@@ -49,7 +50,7 @@ export const eventDetailsSlice = createSlice({
                 state.status = 'pending';
             })
             .addCase(fetchTransportEventById.fulfilled, (state, action) => {
-                state.info = action.payload as unknown as Event;
+                state.info = action.payload as unknown as IEvent;
                 state.status = 'fulfilled';
             })
             .addCase(fetchTransportEventById.rejected, (state, action) => {
