@@ -29,6 +29,7 @@ import { TransitionProps } from '@mui/material/transitions';
 import { useAppDispatch } from '../../../core/state/store.hooks';
 import { filterEvents } from '../../../core/state/events/events.reducer';
 import { isEmpty, isEqual } from 'lodash';
+import { transportEventsFilterAriaLabelKeys } from './index.test';
 
 type Inputs = {
     types: EventTypes[];
@@ -91,6 +92,7 @@ export const TransportEventsFilter: FC = () => {
     return (
         <>
             <IconButton
+                aria-label="open filter button"
                 onClick={handleClickOpen}
                 sx={{
                     backgroundColor: 'primary.main',
@@ -102,6 +104,7 @@ export const TransportEventsFilter: FC = () => {
                 <FilterAltIcon sx={{ color: 'white' }} />
             </IconButton>
             <Dialog
+                aria-label={transportEventsFilterAriaLabelKeys.dialog}
                 open={open}
                 onClose={handleClose}
                 slots={{
@@ -109,7 +112,11 @@ export const TransportEventsFilter: FC = () => {
                 }}
                 keepMounted
             >
-                <DialogTitle>Transport events filter</DialogTitle>
+                <DialogTitle
+                    aria-label={transportEventsFilterAriaLabelKeys.dialogTitle}
+                >
+                    Transport events filter
+                </DialogTitle>
                 <DialogContent>
                     <Stack spacing={2}>
                         <DialogContentText>
@@ -122,7 +129,9 @@ export const TransportEventsFilter: FC = () => {
                         >
                             <Stack spacing={2}>
                                 <FormControl fullWidth>
-                                    <InputLabel>Types</InputLabel>
+                                    <InputLabel id="label-types">
+                                        Types
+                                    </InputLabel>
                                     <Controller
                                         name="types"
                                         control={control}
@@ -132,8 +141,13 @@ export const TransportEventsFilter: FC = () => {
                                                 <Select
                                                     {...field}
                                                     multiple
+                                                    labelId="label-types"
                                                     input={
-                                                        <OutlinedInput label="Transport event types" />
+                                                        <OutlinedInput
+                                                            label={
+                                                                transportEventsFilterAriaLabelKeys.selectTypes
+                                                            }
+                                                        />
                                                     }
                                                     renderValue={(
                                                         selected: string[]
@@ -206,11 +220,23 @@ export const TransportEventsFilter: FC = () => {
                     </Stack>
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose} color="error">
+                    <Button
+                        onClick={handleClose}
+                        color="error"
+                        aria-label={
+                            transportEventsFilterAriaLabelKeys.cancelButton
+                        }
+                    >
                         Cancel
                     </Button>
                     {isShowClearButton && (
-                        <Button onClick={handleClear} color="warning">
+                        <Button
+                            onClick={handleClear}
+                            color="warning"
+                            aria-label={
+                                transportEventsFilterAriaLabelKeys.clearButton
+                            }
+                        >
                             Clear
                         </Button>
                     )}
@@ -219,6 +245,9 @@ export const TransportEventsFilter: FC = () => {
                         onClick={handleSubmit(submit)}
                         color="primary"
                         variant="contained"
+                        aria-label={
+                            transportEventsFilterAriaLabelKeys.applyButton
+                        }
                     >
                         Apply
                     </Button>
